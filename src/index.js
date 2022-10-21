@@ -1,6 +1,4 @@
-const API_KEY = "97a89e3b3c67cefd91f36cb6a4e3a692";
+import './sass/main.scss';
+import { Controller } from './js/Controller';
 
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=London&APPID=${API_KEY}
-`)
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+Controller().init();

@@ -5,11 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Work+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <title>Weather</title>
 </head>
 
 <body>
-
+  <form id="form" class="form">
+    <div class="form__search">
+      <input id="inputCity" class="form__input" type="text" placeholder="London">
+      <span id="searchBtn" class="material-icons-outlined form__icon">search</span>
+    </div>
+    <label for="inputCity" class="form__label">Enter the name of your city</label>
+  </form>
 </body>
 
 </html>

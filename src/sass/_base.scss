@@ -1,0 +1,60 @@
+$color-grey: hsla(0, 0%, 100%, 0.6);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: hsl(0, 0%, 17%);
+  background: url('../bg.png');
+  color: white;
+  padding: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__search {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &__input {
+    min-width: 500px;
+    /* change later */
+    border: 3px solid $color-grey;
+    outline: none;
+    background: none;
+    border-radius: 2rem;
+    height: 56px;
+    padding: 1rem 3.5rem;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.5rem;
+    letter-spacing: -0.08em;
+
+    &:focus {
+      border: 3px solid white;
+    }
+  }
+
+  &__label {
+    color: $color-grey;
+    letter-spacing: -0.08rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+}
