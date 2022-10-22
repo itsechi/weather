@@ -1,0 +1,52 @@
+.weather {
+
+  &__temp {
+    font-family: 'Domine', serif;
+    font-size: 12rem;
+    animation: fadeIn .5s;
+  }
+
+  &__info {
+    margin: 0.5rem 0;
+  }
+
+  &__span {
+    font-family: 'Domine', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+.local {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__weather {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    animation: fadeIn .5s;
+  }
+
+  &__info {
+    margin-top: 0.5rem;
+    animation: fadeIn .5s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.info {
+  font-size: 1.5rem;
+  color: $color-grey;
+  letter-spacing: -0.02em;
+}

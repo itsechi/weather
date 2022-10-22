@@ -12,13 +12,13 @@ body {
   background: url('../bg.png');
   color: white;
   padding: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
 
   &__search {
     position: relative;
@@ -58,38 +58,5 @@ body {
     letter-spacing: -0.08rem;
     font-size: 1.5rem;
     margin-top: 1rem;
-  }
-}
-
-.weather {
-
-  &__temp {
-    font-family: 'Domine', serif;
-    font-size: 12rem;
-    animation: fadeIn .5s;
-  }
-
-  &__info {
-    animation: fadeIn .5s;
-    letter-spacing: -0.02em;
-    font-size: 1.5rem;
-    color: $color-grey;
-  }
-
-  &__span {
-    font-family: 'Domine', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: white;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

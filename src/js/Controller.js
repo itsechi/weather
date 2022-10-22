@@ -1,5 +1,6 @@
 import { App } from './App';
 import { View } from './View';
+import format from 'date-fns/format';
 
 export const Controller = () => {
   const app = App();
@@ -14,6 +15,9 @@ export const Controller = () => {
         feels_like: Math.round(data.main.feels_like),
         humidity: Math.round(data.main.humidity),
         wind: Math.round(data.wind.speed),
+        description: data.weather[0].main.toUpperCase(),
+        city: data.name,
+        date: format(new Date(), 'EEEE | p'),
       };
       console.log(data);
       view.clearInput();
