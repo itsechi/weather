@@ -556,10 +556,10 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/js/Model.js":
-/*!*************************!*\
-  !*** ./src/js/Model.js ***!
-  \*************************/
+/***/ "./src/js/App.js":
+/*!***********************!*\
+  !*** ./src/js/App.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -577,15 +577,48 @@ const App = () => {
       .then(data => console.log(data));
   };
 
-  return { getWeather }
+  return { getWeather };
 };
 
 
 /***/ }),
 
-/***/ "./src/js/view.js":
+/***/ "./src/js/Controller.js":
+/*!******************************!*\
+  !*** ./src/js/Controller.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Controller": () => (/* binding */ Controller)
+/* harmony export */ });
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ "./src/js/App.js");
+/* harmony import */ var _View__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./View */ "./src/js/View.js");
+
+
+
+const Controller = () => {
+  const getCity = () => {
+    const city = (0,_View__WEBPACK_IMPORTED_MODULE_1__.View)().userInput();
+    (0,_App__WEBPACK_IMPORTED_MODULE_0__.App)().getWeather(city);
+    console.log(city);
+    (0,_View__WEBPACK_IMPORTED_MODULE_1__.View)().clearInput();
+  };
+
+  const init = () => {
+    (0,_View__WEBPACK_IMPORTED_MODULE_1__.View)().addHandler(getCity);
+  };
+
+  return { init };
+};
+
+
+/***/ }),
+
+/***/ "./src/js/View.js":
 /*!************************!*\
-  !*** ./src/js/view.js ***!
+  !*** ./src/js/View.js ***!
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -593,23 +626,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "View": () => (/* binding */ View)
 /* harmony export */ });
-/* harmony import */ var _Model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Model */ "./src/js/Model.js");
-
-
-
 const View = () => {
   const form = document.getElementById('form');
   const searchBtn = document.getElementById('searchBtn');
-  console.log(Model)
-  const getCity = e => {
-    e.preventDefault();
+
+  const userInput = () => {
     let input = document.getElementById('inputCity').value;
-    getWeather(input);
-    input = '';
+    return input;
   };
 
-  form.addEventListener('submit', getCity);
-  searchBtn.addEventListener('click', getCity);
+  const clearInput = () => {
+    document.getElementById('inputCity').value = '';
+  };
+
+  const addHandler = handler => {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      handler();
+    });
+    searchBtn.addEventListener('click', e => {
+      e.preventDefault();
+      handler();
+    });
+  };
+
+  return { userInput, addHandler, clearInput };
 };
 
 
@@ -767,11 +808,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/main.scss */ "./src/sass/main.scss");
-/* harmony import */ var _js_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/view */ "./src/js/view.js");
+/* harmony import */ var _js_Controller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/Controller */ "./src/js/Controller.js");
 
 
 
-(0,_js_view__WEBPACK_IMPORTED_MODULE_1__.View)();
+(0,_js_Controller__WEBPACK_IMPORTED_MODULE_1__.Controller)().init();
+
 })();
 
 /******/ })()
