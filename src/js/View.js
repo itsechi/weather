@@ -1,6 +1,4 @@
 export const View = () => {
-  const form = document.getElementById('form');
-  const searchBtn = document.getElementById('searchBtn');
   const weatherContainer = document.getElementById('weather');
   const localInfo = document.getElementById('localInfo');
 
@@ -30,12 +28,23 @@ export const View = () => {
     handler();
   };
 
-  const addHandler = handler => {
+  const addFormHandlers = handler => {
+    const form = document.getElementById('form');
     form.addEventListener('submit', e => {
       handlerHelper(e, handler);
     });
+
+    const searchBtn = document.getElementById('searchBtn');
     searchBtn.addEventListener('click', e => {
       handlerHelper(e, handler);
+    });
+  };
+
+  const addUnitsHandler = handler => {
+    const switchUnitsBtn = document.getElementById('switchUnits');
+    switchUnitsBtn.addEventListener('click', e => {
+      e.preventDefault();
+      handler();
     });
   };
 
@@ -49,9 +58,16 @@ export const View = () => {
     weatherContainer.insertAdjacentHTML('beforeend', left);
 
     const right = `<h2 class="local__weather">${weather.description}</h2>
-    <p class="local__info info">${weather.city} | ${weather.date}</p>`
-    localInfo.insertAdjacentHTML('beforeend', right)
+    <p class="local__info info">${weather.city} | ${weather.date}</p>`;
+    localInfo.insertAdjacentHTML('beforeend', right);
   };
 
-  return { userInput, addHandler, clearInput, renderError, displayWeather };
+  return {
+    userInput,
+    addFormHandlers,
+    clearInput,
+    renderError,
+    displayWeather,
+    addUnitsHandler,
+  };
 };
