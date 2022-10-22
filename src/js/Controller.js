@@ -2,15 +2,22 @@ import { App } from './App';
 import { View } from './View';
 
 export const Controller = () => {
-  const getCity = () => {
-    const city = View().userInput();
-    App().getWeather(city);
-    console.log(city);
-    View().clearInput();
+  const app = App();
+  const view = View();
+
+  const getCity = async () => {
+    try {
+      const city = view.userInput();
+      const weather = await app.getWeather(city);
+      console.log(weather);
+      view.clearInput();
+    } catch (err) {
+      view.renderError();
+    }
   };
 
   const init = () => {
-    View().addHandler(getCity);
+    view.addHandler(getCity);
   };
 
   return { init };

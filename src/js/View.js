@@ -11,6 +11,11 @@ export const View = () => {
     document.getElementById('inputCity').value = '';
   };
 
+  const renderError = () => {
+    const errorMessage = document.getElementById('message');
+    errorMessage.textContent = 'City not found';
+  };
+
   const addHandler = handler => {
     form.addEventListener('submit', e => {
       e.preventDefault();
@@ -22,5 +27,5 @@ export const View = () => {
     });
   };
 
-  return { userInput, addHandler, clearInput };
+  return { userInput, addHandler, clearInput, renderError };
 };
