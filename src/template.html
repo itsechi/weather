@@ -14,13 +14,18 @@
 </head>
 
 <body>
-  <form id="form" class="form">
-    <div class="form__search">
-      <input id="inputCity" class="form__input" type="text" placeholder="London">
-      <span id="searchBtn" class="material-icons-outlined form__icon">search</span>
-    </div>
-    <label for="inputCity" id="message" class="form__label">Enter the name of your city</label>
-  </form>
+  <div class="left">
+    <form id="form" class="form">
+      <div class="form__search">
+        <input id="inputCity" class="form__input" type="text" placeholder="London" autocomplete="off">
+        <span id="searchBtn" class="material-icons-outlined form__icon">search</span>
+      </div>
+      <label for="inputCity" id="message" class="form__label">Enter the name of your city</label>
+    </form>
+    <div id="weather"></div>
+  </div>
+
+  <div class="right"></div>
 </body>
 
 </html>

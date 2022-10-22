@@ -4,7 +4,7 @@ export const App = () => {
   const getWeather = async city => {
     try {
       const res = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=metric`
       );
       const data = await res.json();
       if (!res.ok) throw new Error(`City not found (${res.status})`);
