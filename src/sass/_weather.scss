@@ -8,6 +8,8 @@
 
   &__info {
     margin: 0.5rem 0;
+    animation: fadeIn .5s;
+
   }
 
   &__span {
@@ -35,6 +37,12 @@
   }
 }
 
+.info {
+  font-size: 1.5rem;
+  color: $color-grey;
+  letter-spacing: -0.02em;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -43,10 +51,4 @@
   100% {
     opacity: 1;
   }
-}
-
-.info {
-  font-size: 1.5rem;
-  color: $color-grey;
-  letter-spacing: -0.02em;
 }
