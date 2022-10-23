@@ -14,21 +14,24 @@
 </head>
 
 <body>
-  <div class="left">
-    <form id="form" class="form">
-      <div class="form__search">
-        <input id="inputCity" class="form__input" type="text" placeholder="London" autocomplete="off">
-        <span id="searchBtn" class="material-icons-outlined form__icon">search</span>
-      </div>
-      <label for="inputCity" id="message" class="form__label">Enter the name of your city</label>
-    </form>
-    <div id="weather"></div>
-    <button id="switchUnits" class="hidden">Switch to C</button>
-  </div>
+  <main class="container">
+    <div class="left">
+      <form id="form" class="form">
+        <div class="form__search">
+          <input id="inputCity" class="form__input" type="text" placeholder="London" autocomplete="off">
+          <span id="searchBtn" class="material-icons-outlined form__icon">search</span>
+        </div>
+        <label for="inputCity" id="message" class="form__label">Enter the name of your city</label>
+      </form>
+      <div id="weather"></div>
+      <button id="switchUnits" class="hidden btn">Switch to C</button>
+    </div>
 
-  <div class="right">
-    <div id="localInfo" class="local"></div>
-  </div>
+    <div class="right">
+      <div id="localInfo" class="local"></div>
+    </div>
+  </main>
+  <div class="bg"></div>
 </body>
 
 </html>
