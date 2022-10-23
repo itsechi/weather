@@ -10,15 +10,22 @@ export const Controller = () => {
       const city = view.userInput();
       const weather = await app.getWeather(city);
       view.clearInput();
-      view.displayWeather(weather);
+      view.displayWeather(weather, app.state.units);
     } catch (err) {
       view.renderError();
     }
   };
 
+  const switchUnits = async () => {
+    const units = app.switchUnits();
+    const city = view.userInput();
+    const weather = await app.getWeather(city, units);
+    view.updateWeather(weather, units);
+  };
+
   const init = () => {
     view.addFormHandlers(getData);
-    view.addUnitsHandler();
+    view.addUnitsHandler(switchUnits);
   };
 
   return { init };
