@@ -20,21 +20,27 @@
 }
 
 .local {
+  position: relative;
   display: flex;
+  text-align: right;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
 
   &__weather {
     font-size: 4rem;
     letter-spacing: 0.5rem;
     animation: fadeIn .5s;
+    line-height: 3rem;
   }
 
   &__info {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 0.6rem;
     animation: fadeIn .5s;
   }
+}
+
+.weather-img {
+margin-left: 1.5rem;
 }
 
 .info {

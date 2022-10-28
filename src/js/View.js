@@ -2,6 +2,8 @@ export const View = () => {
   const switchUnitsBtn = document.getElementById('switchUnits');
   const weatherContainer = document.getElementById('weather');
   const localInfo = document.getElementById('localInfo');
+  const spinner = document.querySelector('.lds-ripple');
+
 
   const userInput = () => {
     let input = document.getElementById('inputCity').value;
@@ -10,6 +12,7 @@ export const View = () => {
 
   const clearInput = () => {
     document.getElementById('inputCity').value = '';
+    spinner.style.display = "none"
   };
 
   const clearWeatherInfo = () => {
@@ -49,6 +52,19 @@ export const View = () => {
   };
 
   const displayWeather = (weather, units) => {
+    function importImages(r) {
+      let images = {};
+      r.keys().map((item, index) => {
+        images[item.replace('./', '')] = r(item);
+      });
+      return images;
+    }
+
+    const images = importImages(
+      require.context('../assets', false, /\.(png|jpe?g|svg)$/)
+    );
+    console.log(images['bg-clouds.png']);
+
     const leftMarkup = `
     <h1 id="temperature" class="weather__temp">${weather.temp}°${
       units === 'metric' ? 'C' : 'F'
@@ -64,14 +80,22 @@ export const View = () => {
     } ${units === 'metric' ? 'km/h' : 'mph'}</span></p>
     `;
 
-    const rightMarkup = `<h2 class="local__weather">${weather.description}</h2>
-    <p class="local__info info">${weather.city} | ${weather.date}</p>`;
+    const rightMarkup = `
+    <div class="idk">    <h2 class="local__weather">${weather.description}</h2>
+    <p class="local__info info">${weather.city} | ${weather.date}</p></div>
+    <img src="${images[`icon-${weather.icon}.png`]}" class="weather-img">
+    `;
 
+    document.getElementById('bg').style.background = `url(${images[`bg-${weather.bg}.png`]}) no-repeat center bottom`;
     weatherContainer.insertAdjacentHTML('beforeend', leftMarkup);
     localInfo.insertAdjacentHTML('beforeend', rightMarkup);
     switchUnitsBtn.classList.remove('hidden');
     switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
   };
+
+  const renderSpinner = () => {
+    spinner.style.display = "inline-block"
+  }
 
   const updateWeather = (weather, units) => {
     const leftMarkup = `
@@ -109,5 +133,6 @@ export const View = () => {
     displayWeather,
     addUnitsHandler,
     updateWeather,
+    renderSpinner
   };
 };

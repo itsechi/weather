@@ -6,6 +6,8 @@ export const App = () => {
     city: '',
     units: 'metric',
   };
+  const group1 = ['mist', 'smoke', 'haze', 'dust', 'fog', 'sand', 'ash', 'squall', 'tornado'];
+  const group2 = ['rain', 'drizzle'];
 
   const getWeather = async (city, units = state.units) => {
     if (city) state.city = city;
@@ -15,7 +17,6 @@ export const App = () => {
       );
       const data = await res.json();
       if (!res.ok) throw new Error(`City not found (${res.status})`);
-
       const weather = {
         temp: Math.round(data.main.temp),
         feels_like: Math.round(data.main.feels_like),
@@ -24,8 +25,11 @@ export const App = () => {
         description: data.weather[0].main.toUpperCase(),
         city: data.name,
         date: format(new Date(), 'EEEE | p'),
+        icon: group1.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'mist' : group2.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'rain' : data.weather[0].main.toLowerCase(),
+        bg: group1.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'clouds' : group2.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'rain' : data.weather[0].main.toLowerCase(),
       };
-
+      
+      console.log(weather)
       return weather;
     } catch (err) {
       console.error(err);

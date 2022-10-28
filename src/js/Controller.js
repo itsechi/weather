@@ -7,6 +7,7 @@ export const Controller = () => {
 
   const getData = async () => {
     try {
+      view.renderSpinner();
       const city = view.userInput();
       const weather = await app.getWeather(city);
       view.clearInput();
