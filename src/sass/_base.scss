@@ -25,6 +25,10 @@ main {
     padding: 2rem;
     gap: 1rem;
   }
+
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column-reverse;
+  }
 }
 
 
@@ -46,6 +50,10 @@ main {
 
     @media (max-width: $breakpoint-large) {
       font-size: 1rem;
+    }
+
+    @media (max-width: $breakpoint-small) {
+      left: 1.2rem;
     }
   }
 
@@ -74,6 +82,10 @@ main {
       padding: 1rem 2.75rem;
       height: 28px;
     }
+
+    @media (max-width: $breakpoint-small) {
+      margin-left: 0;
+    }
   }
 
   &__label {
@@ -85,6 +97,10 @@ main {
     @media (max-width: $breakpoint-large) {
       margin-top: 0.5rem;
       font-size: 0.75rem;
+    }
+
+    @media (max-width: $breakpoint-small) {
+      text-align: center;
     }
   }
 }
@@ -111,6 +127,14 @@ main {
   @media (max-width: $breakpoint-large) {
     font-size: 0.75rem;
     margin-top: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
   }
 }
 
