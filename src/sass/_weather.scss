@@ -4,6 +4,14 @@
     font-family: 'Domine', serif;
     font-size: 12rem;
     animation: fadeIn .5s;
+
+    @media (max-width: $breakpoint-large) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: $breakpoint-large) {
+      font-size: 4rem;
+    }
   }
 
   &__info {
@@ -16,6 +24,10 @@
     font-family: 'Domine', sans-serif;
     font-size: 1.5rem;
     color: white;
+
+    @media (max-width: $breakpoint-large) {
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -25,28 +37,57 @@
   text-align: right;
   align-items: center;
 
+  @media (max-width: $breakpoint-large) {
+    flex-direction: column;
+    text-align: center;
+    margin-right: -1rem;
+  }
+
   &__weather {
     font-size: 4rem;
     letter-spacing: 0.5rem;
     animation: fadeIn .5s;
     line-height: 3rem;
+
+    @media (max-width: $breakpoint-large) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: $breakpoint-large) {
+      font-size: 1.5rem;
+    }
   }
 
   &__info {
     margin-top: 1rem;
     margin-right: 0.6rem;
     animation: fadeIn .5s;
+
+    @media (max-width: $breakpoint-large) {
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
   }
 }
 
 .weather-img {
-margin-left: 1.5rem;
+  margin-left: 1.5rem;
+
+  @media (max-width: $breakpoint-large) {
+    width: 5rem;
+    margin-left: 0;
+  }
 }
 
 .info {
   font-size: 1.5rem;
   color: $color-grey;
   letter-spacing: -0.02em;
+
+  @media (max-width: $breakpoint-large) {
+    font-size: 0.75rem;
+  }
 }
 
 @keyframes fadeIn {

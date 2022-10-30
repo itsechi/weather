@@ -1,4 +1,6 @@
 $color-grey: hsla(0, 0%, 100%, 0.6);
+$breakpoint-large: 75em;
+$breakpoint-small: 30em;
 
 * {
   padding: 0;
@@ -18,6 +20,11 @@ main {
   display: flex;
   justify-content: space-between;
   min-height: 100vh;
+
+  @media (max-width: $breakpoint-large) {
+    padding: 2rem;
+    gap: 1rem;
+  }
 }
 
 
@@ -36,11 +43,14 @@ main {
     transform: translateY(-50%);
     font-size: 2rem;
     cursor: pointer;
+
+    @media (max-width: $breakpoint-large) {
+      font-size: 1rem;
+    }
   }
 
   &__input {
-    min-width: 500px;
-    /* change later */
+    min-width: 31.25rem;
     border: 3px solid $color-grey;
     outline: none;
     background: none;
@@ -56,6 +66,14 @@ main {
     &:focus {
       border: 3px solid white;
     }
+
+    @media (max-width: $breakpoint-large) {
+      min-width: 0;
+      max-width: 50vw;
+      font-size: 0.75rem;
+      padding: 1rem 2.75rem;
+      height: 28px;
+    }
   }
 
   &__label {
@@ -63,6 +81,11 @@ main {
     letter-spacing: -0.08rem;
     font-size: 1.5rem;
     margin-top: 1rem;
+
+    @media (max-width: $breakpoint-large) {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -84,6 +107,11 @@ main {
     background-color: white;
     color: hsl(0, 0%, 17%);
   }
+
+  @media (max-width: $breakpoint-large) {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+  }
 }
 
 .hidden {
@@ -91,7 +119,7 @@ main {
 }
 
 .bg {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: none;
   width: 100%;
@@ -100,7 +128,6 @@ main {
 }
 
 .lds-ripple {
-  // display: inline-block;
   display: none;
   position: absolute;
   width: 80px;

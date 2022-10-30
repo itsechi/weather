@@ -15,6 +15,10 @@ export const View = () => {
     spinner.style.display = "none"
   };
 
+  const renderSpinner = () => {
+    spinner.style.display = "inline-block"
+  }
+
   const clearWeatherInfo = () => {
     document.getElementById('message').textContent = '';
     weatherContainer.innerHTML = '';
@@ -92,10 +96,6 @@ export const View = () => {
     switchUnitsBtn.classList.remove('hidden');
     switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
   };
-
-  const renderSpinner = () => {
-    spinner.style.display = "inline-block"
-  }
 
   const updateWeather = (weather, units) => {
     const leftMarkup = `

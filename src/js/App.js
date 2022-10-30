@@ -6,7 +6,17 @@ export const App = () => {
     city: '',
     units: 'metric',
   };
-  const group1 = ['mist', 'smoke', 'haze', 'dust', 'fog', 'sand', 'ash', 'squall', 'tornado'];
+  const group1 = [
+    'mist',
+    'smoke',
+    'haze',
+    'dust',
+    'fog',
+    'sand',
+    'ash',
+    'squall',
+    'tornado',
+  ];
   const group2 = ['rain', 'drizzle'];
 
   const getWeather = async (city, units = state.units) => {
@@ -25,11 +35,27 @@ export const App = () => {
         description: data.weather[0].main.toUpperCase(),
         city: data.name,
         date: format(new Date(), 'EEEE | p'),
-        icon: group1.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'mist' : group2.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'rain' : data.weather[0].main.toLowerCase(),
-        bg: group1.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'clouds' : group2.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'rain' : data.weather[0].main.toLowerCase(),
+        icon: group1.some(
+          condition => condition === data.weather[0].main.toLowerCase()
+        )
+          ? 'mist'
+          : group2.some(
+              condition => condition === data.weather[0].main.toLowerCase()
+            )
+          ? 'rain'
+          : data.weather[0].main.toLowerCase(),
+        bg: group1.some(
+          condition => condition === data.weather[0].main.toLowerCase()
+        )
+          ? 'clouds'
+          : group2.some(
+              condition => condition === data.weather[0].main.toLowerCase()
+            )
+          ? 'rain'
+          : data.weather[0].main.toLowerCase(),
       };
-      
-      console.log(weather)
+
+      console.log(weather);
       return weather;
     } catch (err) {
       console.error(err);
