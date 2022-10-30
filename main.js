@@ -26,7 +26,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #2b2b2b;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "); }\n\nmain {\n  font-family: 'Work Sans', sans-serif;\n  color: white;\n  padding: 3rem;\n  display: flex;\n  justify-content: space-between;\n  min-height: 100vh; }\n\n.form {\n  display: flex;\n  flex-direction: column; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    top: 50%;\n    left: 1rem;\n    transform: translateY(-50%);\n    font-size: 2rem;\n    cursor: pointer; }\n  .form__input {\n    min-width: 500px;\n    /* change later */\n    border: 3px solid rgba(255, 255, 255, 0.6);\n    outline: none;\n    background: none;\n    border-radius: 2rem;\n    height: 56px;\n    padding: 1rem 4rem;\n    color: inherit;\n    font-family: inherit;\n    font-size: 1.5rem;\n    margin-left: -0.5rem;\n    letter-spacing: -0.08rem; }\n    .form__input:focus {\n      border: 3px solid white; }\n  .form__label {\n    color: rgba(255, 255, 255, 0.6);\n    letter-spacing: -0.08rem;\n    font-size: 1.5rem;\n    margin-top: 1rem; }\n\n.btn {\n  border: 3px solid white;\n  outline: none;\n  background: none;\n  border-radius: 2rem;\n  color: white;\n  font-weight: 700;\n  letter-spacing: -0.08rem;\n  font-size: 1.5rem;\n  padding: 1rem 2rem;\n  margin-top: 2rem;\n  margin-left: -0.5rem;\n  cursor: pointer; }\n  .btn:hover {\n    background-color: white;\n    color: #2b2b2b; }\n\n.hidden {\n  display: none; }\n\n.bg {\n  position: absolute;\n  bottom: 0;\n  background: none;\n  width: 100%;\n  height: 100%;\n  z-index: -1; }\n\n.lds-ripple {\n  display: none;\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: 50%;\n  left: 50%; }\n\n.lds-ripple div {\n  position: absolute;\n  border: 4px solid #fff;\n  opacity: 1;\n  border-radius: 50%;\n  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite; }\n\n.lds-ripple div:nth-child(2) {\n  animation-delay: -0.5s; }\n\n@keyframes lds-ripple {\n  0% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 0; }\n  4.9% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 0; }\n  5% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 1; }\n  100% {\n    top: 0px;\n    left: 0px;\n    width: 72px;\n    height: 72px;\n    opacity: 0; } }\n\n.weather__temp {\n  font-family: 'Domine', serif;\n  font-size: 12rem;\n  animation: fadeIn .5s; }\n\n.weather__info {\n  margin: 0.5rem 0;\n  animation: fadeIn .5s; }\n\n.weather__span {\n  font-family: 'Domine', sans-serif;\n  font-size: 1.5rem;\n  color: white; }\n\n.local {\n  position: relative;\n  display: flex;\n  text-align: right;\n  align-items: center; }\n  .local__weather {\n    font-size: 4rem;\n    letter-spacing: 0.5rem;\n    animation: fadeIn .5s;\n    line-height: 3rem; }\n  .local__info {\n    margin-top: 1rem;\n    margin-right: 0.6rem;\n    animation: fadeIn .5s; }\n\n.weather-img {\n  margin-left: 1.5rem; }\n\n.info {\n  font-size: 1.5rem;\n  color: rgba(255, 255, 255, 0.6);\n  letter-spacing: -0.02em; }\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #2b2b2b;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "); }\n\nmain {\n  font-family: 'Work Sans', sans-serif;\n  color: white;\n  padding: 3rem;\n  display: flex;\n  justify-content: space-between;\n  min-height: 100vh; }\n  @media (max-width: 75em) {\n    main {\n      padding: 2rem;\n      gap: 1rem; } }\n  @media (max-width: 30em) {\n    main {\n      flex-direction: column-reverse; } }\n\n.form {\n  display: flex;\n  flex-direction: column; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    top: 50%;\n    left: 1rem;\n    transform: translateY(-50%);\n    font-size: 2rem;\n    cursor: pointer; }\n    @media (max-width: 75em) {\n      .form__icon {\n        font-size: 1rem; } }\n    @media (max-width: 30em) {\n      .form__icon {\n        left: 1.2rem; } }\n  .form__input {\n    min-width: 31.25rem;\n    border: 3px solid rgba(255, 255, 255, 0.6);\n    outline: none;\n    background: none;\n    border-radius: 2rem;\n    height: 56px;\n    padding: 1rem 4rem;\n    color: inherit;\n    font-family: inherit;\n    font-size: 1.5rem;\n    margin-left: -0.5rem;\n    letter-spacing: -0.08rem; }\n    .form__input:focus {\n      border: 3px solid white; }\n    @media (max-width: 75em) {\n      .form__input {\n        min-width: 0;\n        max-width: 50vw;\n        font-size: 0.75rem;\n        padding: 1rem 2.75rem;\n        height: 28px; } }\n    @media (max-width: 30em) {\n      .form__input {\n        margin-left: 0; } }\n  .form__label {\n    color: rgba(255, 255, 255, 0.6);\n    letter-spacing: -0.08rem;\n    font-size: 1.5rem;\n    margin-top: 1rem; }\n    @media (max-width: 75em) {\n      .form__label {\n        margin-top: 0.5rem;\n        font-size: 0.75rem; } }\n    @media (max-width: 30em) {\n      .form__label {\n        text-align: center; } }\n\n.btn {\n  border: 3px solid white;\n  outline: none;\n  background: none;\n  border-radius: 2rem;\n  color: white;\n  font-weight: 700;\n  letter-spacing: -0.08rem;\n  font-size: 1.5rem;\n  padding: 1rem 2rem;\n  margin-top: 2rem;\n  margin-left: -0.5rem;\n  cursor: pointer; }\n  .btn:hover {\n    background-color: white;\n    color: #2b2b2b; }\n  @media (max-width: 75em) {\n    .btn {\n      font-size: 0.75rem;\n      margin-top: 1rem;\n      padding: 0.5rem 1rem; } }\n  @media (max-width: 30em) {\n    .btn {\n      position: relative;\n      left: 50%;\n      transform: translateX(-50%);\n      margin-left: 0; } }\n\n.hidden {\n  display: none; }\n\n.bg {\n  position: fixed;\n  bottom: 0;\n  background: none;\n  width: 100%;\n  height: 100%;\n  z-index: -1; }\n\n.lds-ripple {\n  display: none;\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: 50%;\n  left: 50%; }\n\n.lds-ripple div {\n  position: absolute;\n  border: 4px solid #fff;\n  opacity: 1;\n  border-radius: 50%;\n  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite; }\n\n.lds-ripple div:nth-child(2) {\n  animation-delay: -0.5s; }\n\n@keyframes lds-ripple {\n  0% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 0; }\n  4.9% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 0; }\n  5% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 1; }\n  100% {\n    top: 0px;\n    left: 0px;\n    width: 72px;\n    height: 72px;\n    opacity: 0; } }\n\n@media (max-width: 30em) {\n  .left {\n    position: absolute;\n    top: 1.5rem;\n    left: 50%;\n    transform: translateX(-50%); } }\n\n@media (max-width: 30em) {\n  .weather {\n    position: relative;\n    left: 50%;\n    transform: translateX(-50%);\n    text-align: center; } }\n\n.weather__temp {\n  font-family: 'Domine', serif;\n  font-size: 12rem;\n  animation: fadeIn .5s; }\n  @media (max-width: 75em) {\n    .weather__temp {\n      font-size: 6rem; } }\n  @media (max-width: 30em) {\n    .weather__temp {\n      font-size: 4rem;\n      margin-top: 7rem; } }\n\n.weather__info {\n  margin: 0.5rem 0;\n  animation: fadeIn .5s; }\n\n.weather__span {\n  font-family: 'Domine', sans-serif;\n  font-size: 1.5rem;\n  color: white; }\n  @media (max-width: 75em) {\n    .weather__span {\n      font-size: 0.75rem; } }\n\n.local {\n  position: relative;\n  display: flex;\n  text-align: right;\n  align-items: center; }\n  @media (max-width: 75em) {\n    .local {\n      flex-direction: column;\n      text-align: center;\n      margin-right: -1rem; } }\n  @media (max-width: 30em) {\n    .local {\n      position: absolute;\n      top: 5rem;\n      left: 50%;\n      transform: translateX(-50%);\n      text-align: right;\n      flex-direction: row; } }\n  .local__weather {\n    font-size: 4rem;\n    letter-spacing: 0.5rem;\n    animation: fadeIn .5s;\n    line-height: 3rem; }\n    @media (max-width: 75em) {\n      .local__weather {\n        font-size: 2rem; } }\n    @media (max-width: 30em) {\n      .local__weather {\n        font-size: 1.5rem;\n        line-height: 2rem; } }\n  .local__info {\n    margin-top: 1rem;\n    margin-right: 0.6rem;\n    animation: fadeIn .5s; }\n    @media (max-width: 75em) {\n      .local__info {\n        margin-top: 0rem;\n        margin-bottom: 1rem;\n        margin-right: 0; } }\n    @media (max-width: 30em) {\n      .local__info {\n        margin-right: 0.6rem;\n        margin-bottom: 0; } }\n\n.weather-img {\n  margin-left: 1.5rem; }\n  @media (max-width: 75em) {\n    .weather-img {\n      width: 5rem;\n      margin-left: 0; } }\n  @media (max-width: 30em) {\n    .weather-img {\n      margin-left: 0.5rem; } }\n\n.info {\n  font-size: 1.5rem;\n  color: rgba(255, 255, 255, 0.6);\n  letter-spacing: -0.02em; }\n  @media (max-width: 75em) {\n    .info {\n      font-size: 0.75rem; } }\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3594,7 +3594,17 @@ const App = () => {
     city: '',
     units: 'metric',
   };
-  const group1 = ['mist', 'smoke', 'haze', 'dust', 'fog', 'sand', 'ash', 'squall', 'tornado'];
+  const group1 = [
+    'mist',
+    'smoke',
+    'haze',
+    'dust',
+    'fog',
+    'sand',
+    'ash',
+    'squall',
+    'tornado',
+  ];
   const group2 = ['rain', 'drizzle'];
 
   const getWeather = async (city, units = state.units) => {
@@ -3613,11 +3623,27 @@ const App = () => {
         description: data.weather[0].main.toUpperCase(),
         city: data.name,
         date: (0,date_fns_format__WEBPACK_IMPORTED_MODULE_0__["default"])(new Date(), 'EEEE | p'),
-        icon: group1.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'mist' : group2.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'rain' : data.weather[0].main.toLowerCase(),
-        bg: group1.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'clouds' : group2.some(condition => condition === data.weather[0].main.toLowerCase()) ? 'rain' : data.weather[0].main.toLowerCase(),
+        icon: group1.some(
+          condition => condition === data.weather[0].main.toLowerCase()
+        )
+          ? 'mist'
+          : group2.some(
+              condition => condition === data.weather[0].main.toLowerCase()
+            )
+          ? 'rain'
+          : data.weather[0].main.toLowerCase(),
+        bg: group1.some(
+          condition => condition === data.weather[0].main.toLowerCase()
+        )
+          ? 'clouds'
+          : group2.some(
+              condition => condition === data.weather[0].main.toLowerCase()
+            )
+          ? 'rain'
+          : data.weather[0].main.toLowerCase(),
       };
-      
-      console.log(weather)
+
+      console.log(weather);
       return weather;
     } catch (err) {
       console.error(err);
@@ -3714,6 +3740,10 @@ const View = () => {
     spinner.style.display = "none"
   };
 
+  const renderSpinner = () => {
+    spinner.style.display = "inline-block"
+  }
+
   const clearWeatherInfo = () => {
     document.getElementById('message').textContent = '';
     weatherContainer.innerHTML = '';
@@ -3791,10 +3821,6 @@ const View = () => {
     switchUnitsBtn.classList.remove('hidden');
     switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
   };
-
-  const renderSpinner = () => {
-    spinner.style.display = "inline-block"
-  }
 
   const updateWeather = (weather, units) => {
     const leftMarkup = `
