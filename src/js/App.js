@@ -23,7 +23,7 @@ export const App = () => {
     if (city) state.city = city;
     try {
       const res = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${state.city}&APPID=${API_KEY}&units=${units}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${state.city}&APPID=${API_KEY}&units=${units}`
       );
       const data = await res.json();
       if (!res.ok) throw new Error(`City not found (${res.status})`);
