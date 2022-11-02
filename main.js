@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #f5f7ff;\n  font-family: 'Montserrat', sans-serif; }\n\nmain {\n  color: rgba(48, 62, 110, 0.8);\n  padding: 3rem;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n  min-height: 100vh; }\n  @media (max-width: 600px) {\n    main {\n      padding: 2rem; } }\n\np {\n  color: rgba(49, 62, 111, 0.7); }\n\np:last-child {\n  font-weight: 700;\n  color: #313E6F; }\n\n.form {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    left: 1rem;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #313E6F;\n    cursor: pointer; }\n  .form__input {\n    background-color: #D9E1FF;\n    border: none;\n    outline: none;\n    border-radius: 21px;\n    padding: 1rem 3rem;\n    font-size: 1rem;\n    font-family: inherit;\n    width: 80vw;\n    max-width: 30rem;\n    min-width: 200px; }\n  .form__info {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 7rem; }\n  .form__img {\n    margin-bottom: 0.5rem; }\n  .form__label {\n    color: #313E6F;\n    font-weight: 600; }\n    .form__label--error {\n      color: #C71E88;\n      margin-top: 0.5rem; }\n\n.hidden {\n  display: none; }\n\n.weather {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: space-between;\n  flex: 1; }\n  .weather__details {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 2rem; }\n  .weather__description {\n    font-size: 1.5rem;\n    color: #313E6F; }\n  .weather__img {\n    margin-top: 4rem;\n    margin-bottom: 1vh; }\n    @media (max-height: 700px) {\n      .weather__img {\n        margin: 0;\n        margin-top: 2rem; } }\n  .weather__temperature {\n    font-weight: 400;\n    font-size: 6rem;\n    color: #2F51D2; }\n  .weather__units {\n    color: rgba(47, 81, 210, 0.5); }\n    .weather__units--inactive {\n      cursor: pointer;\n      color: rgba(47, 81, 210, 0.5); }\n    .weather__units--active {\n      color: #2F51D2; }\n  .weather__info {\n    display: flex; }\n    @media (max-height: 700px) {\n      .weather__info {\n        margin-top: 2rem; } }\n    .weather__info--card {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin: 0 3vw;\n      min-width: 5rem; }\n    .weather__info img {\n      margin: 0.5rem 0; }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #f5f7ff;\n  font-family: 'Montserrat', sans-serif; }\n\nmain {\n  color: rgba(48, 62, 110, 0.8);\n  padding: 3rem;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n  min-height: 100vh; }\n  @media (max-width: 600px) {\n    main {\n      padding: 2rem; } }\n\np {\n  color: rgba(49, 62, 111, 0.7); }\n\np:last-child {\n  font-weight: 700;\n  color: #313E6F; }\n\n.form {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    left: 1rem;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #313E6F;\n    cursor: pointer; }\n  .form__input {\n    background-color: #D9E1FF;\n    border: none;\n    outline: none;\n    border-radius: 21px;\n    padding: 1rem 3rem;\n    font-size: 1rem;\n    font-family: inherit;\n    width: 80vw;\n    max-width: 30rem;\n    min-width: 200px; }\n  .form__info {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 7rem; }\n  .form__img {\n    margin-bottom: 0.5rem; }\n  .form__label {\n    color: #313E6F;\n    font-weight: 600; }\n    .form__label--error {\n      color: #C71E88;\n      margin-top: 0.5rem; }\n\n.hidden {\n  display: none; }\n\n/* https://cssloaders.github.io/ */\n.spinner {\n  width: 48px;\n  height: 48px;\n  border: 5px solid #FFF;\n  border-bottom-color: #4F6CD3;\n  border-radius: 50%;\n  display: none;\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n  position: absolute;\n  top: 50%; }\n\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg); }\n  100% {\n    transform: rotate(360deg); } }\n\n.weather {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: space-between;\n  flex: 1; }\n  .weather__details {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 2rem; }\n  .weather__description {\n    font-size: 1.5rem;\n    color: #313E6F; }\n  .weather__img {\n    margin-top: 4rem;\n    margin-bottom: 1vh; }\n    @media (max-height: 700px) {\n      .weather__img {\n        margin: 0;\n        margin-top: 2rem; } }\n  .weather__temperature {\n    font-weight: 400;\n    font-size: 6rem;\n    color: #2F51D2; }\n  .weather__units {\n    color: rgba(47, 81, 210, 0.5); }\n    .weather__units--inactive {\n      cursor: pointer;\n      color: rgba(47, 81, 210, 0.5); }\n    .weather__units--active {\n      color: #2F51D2; }\n  .weather__info {\n    display: flex; }\n    @media (max-height: 700px) {\n      .weather__info {\n        margin-top: 2rem; } }\n    .weather__info--card {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin: 0 3vw;\n      min-width: 5rem; }\n    .weather__info img {\n      margin: 0.5rem 0; }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3628,7 +3628,7 @@ const Controller = () => {
 
   const getData = async () => {
     try {
-      // view.renderSpinner();
+      view.renderSpinner();
       const city = view.userInput();
       const weather = await app.getWeather(city);
       view.clearInput();
@@ -3669,7 +3669,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const View = () => {
   const weatherContainer = document.getElementById('weather');
-  // const spinner = document.querySelector('.lds-ripple');
+  const spinner = document.querySelector('.spinner');
 
   const userInput = () => {
     let input = document.getElementById('inputCity').value;
@@ -3678,12 +3678,12 @@ const View = () => {
 
   const clearInput = () => {
     document.getElementById('inputCity').value = '';
-    // spinner.style.display = "none"
+    spinner.style.display = 'none';
   };
 
-  // const renderSpinner = () => {
-  //   spinner.style.display = "inline-block"
-  // }
+  const renderSpinner = () => {
+    spinner.style.display = 'inline-block';
+  };
 
   const clearWeatherInfo = () => {
     document.getElementById('error').classList.add('hidden');
@@ -3791,6 +3791,7 @@ const View = () => {
     renderError,
     displayWeather,
     addUnitsHandler,
+    renderSpinner,
   };
 };
 
