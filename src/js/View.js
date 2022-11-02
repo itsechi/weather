@@ -1,6 +1,6 @@
 export const View = () => {
   const weatherContainer = document.getElementById('weather');
-  // const spinner = document.querySelector('.lds-ripple');
+  const spinner = document.querySelector('.spinner');
 
   const userInput = () => {
     let input = document.getElementById('inputCity').value;
@@ -9,12 +9,12 @@ export const View = () => {
 
   const clearInput = () => {
     document.getElementById('inputCity').value = '';
-    // spinner.style.display = "none"
+    spinner.style.display = 'none';
   };
 
-  // const renderSpinner = () => {
-  //   spinner.style.display = "inline-block"
-  // }
+  const renderSpinner = () => {
+    spinner.style.display = 'inline-block';
+  };
 
   const clearWeatherInfo = () => {
     document.getElementById('error').classList.add('hidden');
@@ -122,5 +122,6 @@ export const View = () => {
     renderError,
     displayWeather,
     addUnitsHandler,
+    renderSpinner,
   };
 };
