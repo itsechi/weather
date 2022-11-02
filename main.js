@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #f5f7ff;\n  font-family: 'Montserrat', sans-serif; }\n\nmain {\n  color: rgba(48, 62, 110, 0.8);\n  padding: 3rem;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n  min-height: 100vh; }\n  @media (max-width: 300px) {\n    main {\n      padding: 2rem; } }\n\np {\n  color: rgba(49, 62, 111, 0.7); }\n\np:last-child {\n  font-weight: 700;\n  color: #313E6F; }\n\n.form {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    left: 1rem;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #313E6F;\n    cursor: pointer; }\n  .form__input {\n    background-color: #D9E1FF;\n    border: none;\n    outline: none;\n    border-radius: 21px;\n    padding: 1rem 3rem;\n    font-size: 1rem;\n    font-family: inherit;\n    width: 80vw;\n    max-width: 30rem;\n    min-width: 200px; }\n  .form__info {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 7rem; }\n  .form__img {\n    margin-bottom: 0.5rem; }\n  .form__label {\n    color: #313E6F;\n    font-weight: 600; }\n    .form__label--error {\n      color: #C71E88;\n      margin-top: 0.5rem; }\n\n.hidden {\n  display: none; }\n\n.weather {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: space-between;\n  flex: 1; }\n  .weather__details {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 2rem; }\n  .weather__description {\n    font-size: 1.5rem;\n    color: #313E6F; }\n  .weather__img {\n    margin-top: 4rem;\n    margin-bottom: 1vh; }\n    @media (max-height: 700px) {\n      .weather__img {\n        margin: 0;\n        margin-top: 2rem; } }\n  .weather__temperature {\n    font-weight: 400;\n    font-size: 6rem;\n    color: #2F51D2; }\n  .weather__info {\n    display: flex; }\n    @media (max-height: 700px) {\n      .weather__info {\n        margin-top: 2rem; } }\n    .weather__info--card {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin: 0 3vw;\n      min-width: 5rem; }\n    .weather__info img {\n      margin: 0.5rem 0; }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #f5f7ff;\n  font-family: 'Montserrat', sans-serif; }\n\nmain {\n  color: rgba(48, 62, 110, 0.8);\n  padding: 3rem;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n  min-height: 100vh; }\n  @media (max-width: 600px) {\n    main {\n      padding: 2rem; } }\n\np {\n  color: rgba(49, 62, 111, 0.7); }\n\np:last-child {\n  font-weight: 700;\n  color: #313E6F; }\n\n.form {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    left: 1rem;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #313E6F;\n    cursor: pointer; }\n  .form__input {\n    background-color: #D9E1FF;\n    border: none;\n    outline: none;\n    border-radius: 21px;\n    padding: 1rem 3rem;\n    font-size: 1rem;\n    font-family: inherit;\n    width: 80vw;\n    max-width: 30rem;\n    min-width: 200px; }\n  .form__info {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 7rem; }\n  .form__img {\n    margin-bottom: 0.5rem; }\n  .form__label {\n    color: #313E6F;\n    font-weight: 600; }\n    .form__label--error {\n      color: #C71E88;\n      margin-top: 0.5rem; }\n\n.hidden {\n  display: none; }\n\n.weather {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: space-between;\n  flex: 1; }\n  .weather__details {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 2rem; }\n  .weather__description {\n    font-size: 1.5rem;\n    color: #313E6F; }\n  .weather__img {\n    margin-top: 4rem;\n    margin-bottom: 1vh; }\n    @media (max-height: 700px) {\n      .weather__img {\n        margin: 0;\n        margin-top: 2rem; } }\n  .weather__temperature {\n    font-weight: 400;\n    font-size: 6rem;\n    color: #2F51D2; }\n  .weather__units {\n    color: rgba(47, 81, 210, 0.5); }\n    .weather__units--inactive {\n      cursor: pointer;\n      color: rgba(47, 81, 210, 0.5); }\n    .weather__units--active {\n      color: #2F51D2; }\n  .weather__info {\n    display: flex; }\n    @media (max-height: 700px) {\n      .weather__info {\n        margin-top: 2rem; } }\n    .weather__info--card {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin: 0 3vw;\n      min-width: 5rem; }\n    .weather__info img {\n      margin: 0.5rem 0; }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3642,12 +3642,12 @@ const Controller = () => {
     const units = app.switchUnits();
     const city = view.userInput();
     const weather = await app.getWeather(city, units);
-    view.updateWeather(weather, units);
+    view.displayWeather(weather, units);
   };
 
   const init = () => {
+    view.addUnitsHandler(switchUnits);
     view.addFormHandlers(getData);
-    // view.addUnitsHandler(switchUnits);
   };
 
   return { init };
@@ -3668,11 +3668,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "View": () => (/* binding */ View)
 /* harmony export */ });
 const View = () => {
-  // const switchUnitsBtn = document.getElementById('switchUnits');
   const weatherContainer = document.getElementById('weather');
-  // const localInfo = document.getElementById('localInfo');
   // const spinner = document.querySelector('.lds-ripple');
-
 
   const userInput = () => {
     let input = document.getElementById('inputCity').value;
@@ -3717,17 +3714,26 @@ const View = () => {
     });
   };
 
-  // const addUnitsHandler = handler => {
-  //   switchUnitsBtn.addEventListener('click', e => {
-  //     e.preventDefault();
-  //     handler();
-  //   });
-  // };
+  const addUnitsHandler = handler => {
+    weatherContainer.addEventListener('click', e => {
+      if (e.target.classList.contains('weather__units--inactive')) {
+        const inactiveUnits = e.target;
+        const activeUnits = document.querySelector('.weather__units--active');
+        inactiveUnits.classList.remove('weather__units--inactive');
+        inactiveUnits.classList.add('weather__units--active');
+        activeUnits.classList.remove('weather__units--active');
+        activeUnits.classList.add('weather__units--inactive');
+        e.preventDefault();
+        handler();
+      }
+    });
+  };
 
   const displayWeather = (weather, units) => {
+    weatherContainer.innerHTML = '';
     function importImages(r) {
       let images = {};
-      r.keys().map((item) => {
+      r.keys().map(item => {
         images[item.replace('./', '')] = r(item);
       });
       return images;
@@ -3743,7 +3749,17 @@ const View = () => {
         <h3 class="weather__description">${weather.description}</h3>
         <p class="weather__location">${weather.city} | ${weather.date}</p>
         <img src="${images[`icon-${weather.icon}.png`]}" class="weather__img">
-        <h1 class="weather__temperature">${weather.temp}°C</h1>
+        <h1 class="weather__temperature">${weather.temp}°
+        <span class="weather__units">
+          <span class="weather__units--${
+            units === 'metric' ? 'active' : 'inactive'
+          }">C</span>
+          |
+          <span class="weather__units--${
+            units === 'metric' ? 'inactive' : 'active'
+          }">F</span>
+        </span>
+        </h1>
       </div>
 
       <div class="weather__info">
@@ -3755,7 +3771,7 @@ const View = () => {
         <div class="weather__info--card">
           <p>Wind</p>
           <img src="${images[`icon-wind.png`]}">
-          <p>${weather.wind} km/h</p>
+          <p>${weather.wind} ${units === 'metric' ? 'km/h' : 'mph'}</p>
         </div>
         <div class="weather__info--card">
           <p>Humidity</p>
@@ -3766,61 +3782,6 @@ const View = () => {
     `;
 
     weatherContainer.insertAdjacentHTML('beforeend', markup);
-
-    // const leftMarkup = `
-    // <h1 id="temperature" class="weather__temp">${weather.temp}°${
-    //   units === 'metric' ? 'C' : 'F'
-    // }</h1>
-    // <p id="feelsLike" class="weather__info info">Feels like <span class="weather__span">${
-    //   weather.feels_like
-    // }°${units === 'metric' ? 'C' : 'F'}</span></p>
-    // <p id="humidity" class="weather__info info">Humidity <span class="weather__span">${
-    //   weather.humidity
-    // }%</span></p>
-    // <p id="wind" class="weather__info info">Wind <span class="weather__span">${
-    //   weather.wind
-    // } ${units === 'metric' ? 'km/h' : 'mph'}</span></p>
-    // `;
-
-    // const rightMarkup = `
-    // <div class="idk">    <h2 class="local__weather">${weather.description}</h2>
-    // <p class="local__info info">${weather.city} | ${weather.date}</p></div>
-    // <img src="${images[`icon-${weather.icon}.png`]}" class="weather-img">
-    // `;
-
-    // document.getElementById('bg').style.background = `url(${images[`bg-${weather.bg}.png`]}); background-position: center;`;
-    // weatherContainer.insertAdjacentHTML('beforeend', leftMarkup);
-    // localInfo.insertAdjacentHTML('beforeend', rightMarkup);
-    // switchUnitsBtn.classList.remove('hidden');
-    // switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
-  };
-
-  const updateWeather = (weather, units) => {
-    const leftMarkup = `
-    <h1 id="temperature" class="weather__temp">${weather.temp}°${
-      units === 'metric' ? 'C' : 'F'
-    }</h1>
-    <p id="feelsLike" class="weather__info info">Feels like <span class="weather__span">${
-      weather.feels_like
-    }°${units === 'metric' ? 'C' : 'F'}</span></p>
-    <p id="humidity" class="weather__info info">Humidity <span class="weather__span">${
-      weather.humidity
-    }%</span></p>
-    <p id="wind" class="weather__info info">Wind <span class="weather__span">${
-      weather.wind
-    } ${units === 'metric' ? 'km/h' : 'mph'}</span></p>
-    `;
-
-    switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
-    const newDOM = document.createRange().createContextualFragment(leftMarkup);
-    const newElements = Array.from(newDOM.querySelectorAll('*'));
-    const curElements = Array.from(weatherContainer.querySelectorAll('*'));
-
-    newElements.forEach((newEl, i) => {
-      const curEl = curElements[i];
-      if (curEl.lastChild.nodeName === '#text')
-        curEl.textContent = newEl.textContent;
-    });
   };
 
   return {
@@ -3829,8 +3790,7 @@ const View = () => {
     clearInput,
     renderError,
     displayWeather,
-    // addUnitsHandler,
-    updateWeather,
+    addUnitsHandler,
   };
 };
 
