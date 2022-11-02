@@ -34,6 +34,19 @@
     color: #2F51D2;
   }
 
+  &__units {
+    color: rgba(47, 81, 210, 0.5);
+
+    &--inactive {
+      cursor: pointer;
+      color: rgba(47, 81, 210, 0.5);
+    }
+
+    &--active {
+      color: #2F51D2;
+    }
+  }
+
   &__info {
     display: flex;
 

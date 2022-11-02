@@ -1,9 +1,6 @@
 export const View = () => {
-  // const switchUnitsBtn = document.getElementById('switchUnits');
   const weatherContainer = document.getElementById('weather');
-  // const localInfo = document.getElementById('localInfo');
   // const spinner = document.querySelector('.lds-ripple');
-
 
   const userInput = () => {
     let input = document.getElementById('inputCity').value;
@@ -48,17 +45,26 @@ export const View = () => {
     });
   };
 
-  // const addUnitsHandler = handler => {
-  //   switchUnitsBtn.addEventListener('click', e => {
-  //     e.preventDefault();
-  //     handler();
-  //   });
-  // };
+  const addUnitsHandler = handler => {
+    weatherContainer.addEventListener('click', e => {
+      if (e.target.classList.contains('weather__units--inactive')) {
+        const inactiveUnits = e.target;
+        const activeUnits = document.querySelector('.weather__units--active');
+        inactiveUnits.classList.remove('weather__units--inactive');
+        inactiveUnits.classList.add('weather__units--active');
+        activeUnits.classList.remove('weather__units--active');
+        activeUnits.classList.add('weather__units--inactive');
+        e.preventDefault();
+        handler();
+      }
+    });
+  };
 
   const displayWeather = (weather, units) => {
+    weatherContainer.innerHTML = '';
     function importImages(r) {
       let images = {};
-      r.keys().map((item) => {
+      r.keys().map(item => {
         images[item.replace('./', '')] = r(item);
       });
       return images;
@@ -74,7 +80,17 @@ export const View = () => {
         <h3 class="weather__description">${weather.description}</h3>
         <p class="weather__location">${weather.city} | ${weather.date}</p>
         <img src="${images[`icon-${weather.icon}.png`]}" class="weather__img">
-        <h1 class="weather__temperature">${weather.temp}°C</h1>
+        <h1 class="weather__temperature">${weather.temp}°
+        <span class="weather__units">
+          <span class="weather__units--${
+            units === 'metric' ? 'active' : 'inactive'
+          }">C</span>
+          |
+          <span class="weather__units--${
+            units === 'metric' ? 'inactive' : 'active'
+          }">F</span>
+        </span>
+        </h1>
       </div>
 
       <div class="weather__info">
@@ -86,7 +102,7 @@ export const View = () => {
         <div class="weather__info--card">
           <p>Wind</p>
           <img src="${images[`icon-wind.png`]}">
-          <p>${weather.wind} km/h</p>
+          <p>${weather.wind} ${units === 'metric' ? 'km/h' : 'mph'}</p>
         </div>
         <div class="weather__info--card">
           <p>Humidity</p>
@@ -97,61 +113,6 @@ export const View = () => {
     `;
 
     weatherContainer.insertAdjacentHTML('beforeend', markup);
-
-    // const leftMarkup = `
-    // <h1 id="temperature" class="weather__temp">${weather.temp}°${
-    //   units === 'metric' ? 'C' : 'F'
-    // }</h1>
-    // <p id="feelsLike" class="weather__info info">Feels like <span class="weather__span">${
-    //   weather.feels_like
-    // }°${units === 'metric' ? 'C' : 'F'}</span></p>
-    // <p id="humidity" class="weather__info info">Humidity <span class="weather__span">${
-    //   weather.humidity
-    // }%</span></p>
-    // <p id="wind" class="weather__info info">Wind <span class="weather__span">${
-    //   weather.wind
-    // } ${units === 'metric' ? 'km/h' : 'mph'}</span></p>
-    // `;
-
-    // const rightMarkup = `
-    // <div class="idk">    <h2 class="local__weather">${weather.description}</h2>
-    // <p class="local__info info">${weather.city} | ${weather.date}</p></div>
-    // <img src="${images[`icon-${weather.icon}.png`]}" class="weather-img">
-    // `;
-
-    // document.getElementById('bg').style.background = `url(${images[`bg-${weather.bg}.png`]}); background-position: center;`;
-    // weatherContainer.insertAdjacentHTML('beforeend', leftMarkup);
-    // localInfo.insertAdjacentHTML('beforeend', rightMarkup);
-    // switchUnitsBtn.classList.remove('hidden');
-    // switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
-  };
-
-  const updateWeather = (weather, units) => {
-    const leftMarkup = `
-    <h1 id="temperature" class="weather__temp">${weather.temp}°${
-      units === 'metric' ? 'C' : 'F'
-    }</h1>
-    <p id="feelsLike" class="weather__info info">Feels like <span class="weather__span">${
-      weather.feels_like
-    }°${units === 'metric' ? 'C' : 'F'}</span></p>
-    <p id="humidity" class="weather__info info">Humidity <span class="weather__span">${
-      weather.humidity
-    }%</span></p>
-    <p id="wind" class="weather__info info">Wind <span class="weather__span">${
-      weather.wind
-    } ${units === 'metric' ? 'km/h' : 'mph'}</span></p>
-    `;
-
-    switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
-    const newDOM = document.createRange().createContextualFragment(leftMarkup);
-    const newElements = Array.from(newDOM.querySelectorAll('*'));
-    const curElements = Array.from(weatherContainer.querySelectorAll('*'));
-
-    newElements.forEach((newEl, i) => {
-      const curEl = curElements[i];
-      if (curEl.lastChild.nodeName === '#text')
-        curEl.textContent = newEl.textContent;
-    });
   };
 
   return {
@@ -160,7 +121,6 @@ export const View = () => {
     clearInput,
     renderError,
     displayWeather,
-    // addUnitsHandler,
-    updateWeather,
+    addUnitsHandler,
   };
 };

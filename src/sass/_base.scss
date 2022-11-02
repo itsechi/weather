@@ -18,7 +18,7 @@ main {
   flex-direction: column;
   min-height: 100vh;
 
-  @media (max-width: 300px) {
+  @media (max-width: 600px) {
     padding: 2rem;
   }
 }

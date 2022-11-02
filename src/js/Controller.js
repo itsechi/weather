@@ -21,12 +21,12 @@ export const Controller = () => {
     const units = app.switchUnits();
     const city = view.userInput();
     const weather = await app.getWeather(city, units);
-    view.updateWeather(weather, units);
+    view.displayWeather(weather, units);
   };
 
   const init = () => {
+    view.addUnitsHandler(switchUnits);
     view.addFormHandlers(getData);
-    // view.addUnitsHandler(switchUnits);
   };
 
   return { init };
