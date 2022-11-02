@@ -3586,8 +3586,6 @@ const App = () => {
           ? 'rain'
           : data.weather[0].main.toLowerCase(),
       };
-
-      console.log(weather);
       return weather;
     } catch (err) {
       console.error(err);
@@ -3694,6 +3692,8 @@ const View = () => {
   const renderError = () => {
     const errorMessage = document.getElementById('error');
     errorMessage.classList.remove('hidden');
+    document.getElementById('formInfo').classList.remove('hidden');
+    spinner.style.display = 'none';
   };
 
   const handlerHelper = (e, handler) => {

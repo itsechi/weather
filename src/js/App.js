@@ -45,8 +45,6 @@ export const App = () => {
           ? 'rain'
           : data.weather[0].main.toLowerCase(),
       };
-
-      console.log(weather);
       return weather;
     } catch (err) {
       console.error(err);
