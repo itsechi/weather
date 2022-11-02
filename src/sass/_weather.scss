@@ -1,136 +1,57 @@
-.left {
-  @media (max-width: $breakpoint-small) {
-    position: absolute;
-    top: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%)
-  }
-}
-
 .weather {
-  @media (max-width: $breakpoint-small) {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-
-  &__temp {
-    font-family: 'Domine', serif;
-    font-size: 12rem;
-    animation: fadeIn .5s;
-
-    @media (max-width: $breakpoint-large) {
-      font-size: 6rem;
-    }
-
-    @media (max-width: $breakpoint-small) {
-      font-size: 4rem;
-      margin-top: 7rem;
-    }
-  }
-
-  &__info {
-    margin: 0.5rem 0;
-    animation: fadeIn .5s;
-
-  }
-
-  &__span {
-    font-family: 'Domine', sans-serif;
-    font-size: 1.5rem;
-    color: white;
-
-    @media (max-width: $breakpoint-large) {
-      font-size: 0.75rem;
-    }
-  }
-}
-
-.local {
-  position: relative;
   display: flex;
-  text-align: right;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 
-  @media (max-width: $breakpoint-large) {
+  &__details {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-right: -1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
   }
 
-  @media (max-width: $breakpoint-small) {
-    position: absolute;
-    top: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: right;
-    flex-direction: row;
+  &__description {
+    font-size: 1.5rem;
+    color: #313E6F;
   }
 
-  &__weather {
-    font-size: 4rem;
-    letter-spacing: 0.5rem;
-    animation: fadeIn .5s;
-    line-height: 3rem;
+  &__img {
+    margin-top: 4rem;
+    margin-bottom: 1vh;
 
-    @media (max-width: $breakpoint-large) {
-      font-size: 2rem;
+    @media (max-height: 700px) {
+      margin: 0;
+      margin-top: 2rem;
     }
+  }
 
-    @media (max-width: $breakpoint-small) {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
+  &__temperature {
+    font-weight: 400;
+    font-size: 6rem;
+    color: #2F51D2;
   }
 
   &__info {
-    margin-top: 1rem;
-    margin-right: 0.6rem;
-    animation: fadeIn .5s;
+    display: flex;
 
-    @media (max-width: $breakpoint-large) {
-      margin-top: 0rem;
-      margin-bottom: 1rem;
-      margin-right: 0;
+    @media (max-height: 700px) {
+      margin-top: 2rem;
     }
 
-    @media (max-width: $breakpoint-small) {
-      margin-right: 0.6rem;
-      margin-bottom: 0;
+    &--card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 3vw;
+      min-width: 5rem;
     }
-  }
-}
 
-.weather-img {
-  margin-left: 1.5rem;
-
-  @media (max-width: $breakpoint-large) {
-    width: 5rem;
-    margin-left: 0;
-  }
-
-  @media (max-width: $breakpoint-small) {
-    margin-left: 0.5rem;
-  }
-}
-
-.info {
-  font-size: 1.5rem;
-  color: $color-grey;
-  letter-spacing: -0.02em;
-
-  @media (max-width: $breakpoint-large) {
-    font-size: 0.75rem;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
+    & img {
+      margin: 0.5rem 0;
+    }
   }
 }

@@ -7,7 +7,7 @@ export const Controller = () => {
 
   const getData = async () => {
     try {
-      view.renderSpinner();
+      // view.renderSpinner();
       const city = view.userInput();
       const weather = await app.getWeather(city);
       view.clearInput();
@@ -26,7 +26,7 @@ export const Controller = () => {
 
   const init = () => {
     view.addFormHandlers(getData);
-    view.addUnitsHandler(switchUnits);
+    // view.addUnitsHandler(switchUnits);
   };
 
   return { init };

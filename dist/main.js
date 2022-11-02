@@ -16,17 +16,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/bg.png */ "./src/assets/bg.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #2b2b2b;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "); }\n\nmain {\n  font-family: 'Work Sans', sans-serif;\n  color: white;\n  padding: 3rem;\n  display: flex;\n  justify-content: space-between;\n  min-height: 100vh; }\n  @media (max-width: 75em) {\n    main {\n      padding: 2rem;\n      gap: 1rem; } }\n  @media (max-width: 30em) {\n    main {\n      flex-direction: column-reverse; } }\n\n.form {\n  display: flex;\n  flex-direction: column; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    top: 50%;\n    left: 1rem;\n    transform: translateY(-50%);\n    font-size: 2rem;\n    cursor: pointer; }\n    @media (max-width: 75em) {\n      .form__icon {\n        font-size: 1rem; } }\n    @media (max-width: 30em) {\n      .form__icon {\n        left: 1.2rem; } }\n  .form__input {\n    min-width: 31.25rem;\n    border: 3px solid rgba(255, 255, 255, 0.6);\n    outline: none;\n    background: none;\n    border-radius: 2rem;\n    height: 56px;\n    padding: 1rem 4rem;\n    color: inherit;\n    font-family: inherit;\n    font-size: 1.5rem;\n    margin-left: -0.5rem;\n    letter-spacing: -0.08rem; }\n    .form__input:focus {\n      border: 3px solid white; }\n    @media (max-width: 75em) {\n      .form__input {\n        min-width: 0;\n        max-width: 50vw;\n        font-size: 0.75rem;\n        padding: 1rem 2.75rem;\n        height: 28px; } }\n    @media (max-width: 30em) {\n      .form__input {\n        margin-left: 0; } }\n  .form__label {\n    color: rgba(255, 255, 255, 0.6);\n    letter-spacing: -0.08rem;\n    font-size: 1.5rem;\n    margin-top: 1rem; }\n    @media (max-width: 75em) {\n      .form__label {\n        margin-top: 0.5rem;\n        font-size: 0.75rem; } }\n    @media (max-width: 30em) {\n      .form__label {\n        text-align: center; } }\n\n.btn {\n  border: 3px solid white;\n  outline: none;\n  background: none;\n  border-radius: 2rem;\n  color: white;\n  font-weight: 700;\n  letter-spacing: -0.08rem;\n  font-size: 1.5rem;\n  padding: 1rem 2rem;\n  margin-top: 2rem;\n  margin-left: -0.5rem;\n  cursor: pointer; }\n  .btn:hover {\n    background-color: white;\n    color: #2b2b2b; }\n  @media (max-width: 75em) {\n    .btn {\n      font-size: 0.75rem;\n      margin-top: 1rem;\n      padding: 0.5rem 1rem; } }\n  @media (max-width: 30em) {\n    .btn {\n      position: relative;\n      left: 50%;\n      transform: translateX(-50%);\n      margin-left: 0; } }\n\n.hidden {\n  display: none; }\n\n.bg {\n  position: fixed;\n  bottom: 0;\n  background: none;\n  width: 100%;\n  height: 100%;\n  z-index: -1; }\n\n.lds-ripple {\n  display: none;\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: 50%;\n  left: 50%; }\n\n.lds-ripple div {\n  position: absolute;\n  border: 4px solid #fff;\n  opacity: 1;\n  border-radius: 50%;\n  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite; }\n\n.lds-ripple div:nth-child(2) {\n  animation-delay: -0.5s; }\n\n@keyframes lds-ripple {\n  0% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 0; }\n  4.9% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 0; }\n  5% {\n    top: 36px;\n    left: 36px;\n    width: 0;\n    height: 0;\n    opacity: 1; }\n  100% {\n    top: 0px;\n    left: 0px;\n    width: 72px;\n    height: 72px;\n    opacity: 0; } }\n\n@media (max-width: 30em) {\n  .left {\n    position: absolute;\n    top: 1.5rem;\n    left: 50%;\n    transform: translateX(-50%); } }\n\n@media (max-width: 30em) {\n  .weather {\n    position: relative;\n    left: 50%;\n    transform: translateX(-50%);\n    text-align: center; } }\n\n.weather__temp {\n  font-family: 'Domine', serif;\n  font-size: 12rem;\n  animation: fadeIn .5s; }\n  @media (max-width: 75em) {\n    .weather__temp {\n      font-size: 6rem; } }\n  @media (max-width: 30em) {\n    .weather__temp {\n      font-size: 4rem;\n      margin-top: 7rem; } }\n\n.weather__info {\n  margin: 0.5rem 0;\n  animation: fadeIn .5s; }\n\n.weather__span {\n  font-family: 'Domine', sans-serif;\n  font-size: 1.5rem;\n  color: white; }\n  @media (max-width: 75em) {\n    .weather__span {\n      font-size: 0.75rem; } }\n\n.local {\n  position: relative;\n  display: flex;\n  text-align: right;\n  align-items: center; }\n  @media (max-width: 75em) {\n    .local {\n      flex-direction: column;\n      text-align: center;\n      margin-right: -1rem; } }\n  @media (max-width: 30em) {\n    .local {\n      position: absolute;\n      top: 5rem;\n      left: 50%;\n      transform: translateX(-50%);\n      text-align: right;\n      flex-direction: row; } }\n  .local__weather {\n    font-size: 4rem;\n    letter-spacing: 0.5rem;\n    animation: fadeIn .5s;\n    line-height: 3rem; }\n    @media (max-width: 75em) {\n      .local__weather {\n        font-size: 2rem; } }\n    @media (max-width: 30em) {\n      .local__weather {\n        font-size: 1.5rem;\n        line-height: 2rem; } }\n  .local__info {\n    margin-top: 1rem;\n    margin-right: 0.6rem;\n    animation: fadeIn .5s; }\n    @media (max-width: 75em) {\n      .local__info {\n        margin-top: 0rem;\n        margin-bottom: 1rem;\n        margin-right: 0; } }\n    @media (max-width: 30em) {\n      .local__info {\n        margin-right: 0.6rem;\n        margin-bottom: 0; } }\n\n.weather-img {\n  margin-left: 1.5rem; }\n  @media (max-width: 75em) {\n    .weather-img {\n      width: 5rem;\n      margin-left: 0; } }\n  @media (max-width: 30em) {\n    .weather-img {\n      margin-left: 0.5rem; } }\n\n.info {\n  font-size: 1.5rem;\n  color: rgba(255, 255, 255, 0.6);\n  letter-spacing: -0.02em; }\n  @media (max-width: 75em) {\n    .info {\n      font-size: 0.75rem; } }\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #f5f7ff;\n  font-family: 'Montserrat', sans-serif; }\n\nmain {\n  color: rgba(48, 62, 110, 0.8);\n  padding: 3rem;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n  min-height: 100vh; }\n  @media (max-width: 300px) {\n    main {\n      padding: 2rem; } }\n\np {\n  color: rgba(49, 62, 111, 0.7); }\n\np:last-child {\n  font-weight: 700;\n  color: #313E6F; }\n\n.form {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .form__search {\n    position: relative; }\n  .form__icon {\n    position: absolute;\n    left: 1rem;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #313E6F;\n    cursor: pointer; }\n  .form__input {\n    background-color: #D9E1FF;\n    border: none;\n    outline: none;\n    border-radius: 21px;\n    padding: 1rem 3rem;\n    font-size: 1rem;\n    font-family: inherit;\n    width: 80vw;\n    max-width: 30rem;\n    min-width: 200px; }\n  .form__info {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 7rem; }\n  .form__img {\n    margin-bottom: 0.5rem; }\n  .form__label {\n    color: #313E6F;\n    font-weight: 600; }\n    .form__label--error {\n      color: #C71E88;\n      margin-top: 0.5rem; }\n\n.hidden {\n  display: none; }\n\n.weather {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: space-between;\n  flex: 1; }\n  .weather__details {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 2rem; }\n  .weather__description {\n    font-size: 1.5rem;\n    color: #313E6F; }\n  .weather__img {\n    margin-top: 4rem;\n    margin-bottom: 1vh; }\n    @media (max-height: 700px) {\n      .weather__img {\n        margin: 0;\n        margin-top: 2rem; } }\n  .weather__temperature {\n    font-weight: 400;\n    font-size: 6rem;\n    color: #2F51D2; }\n  .weather__info {\n    display: flex; }\n    @media (max-height: 700px) {\n      .weather__info {\n        margin-top: 2rem; } }\n    .weather__info--card {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin: 0 3vw;\n      min-width: 5rem; }\n    .weather__info img {\n      margin: 0.5rem 0; }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -141,45 +136,6 @@ module.exports = function (cssWithMappingToString) {
   };
 
   return list;
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    options = {};
-  }
-
-  if (!url) {
-    return url;
-  }
-
-  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
-
-  if (/^['"].*['"]$/.test(url)) {
-    url = url.slice(1, -1);
-  }
-
-  if (options.hash) {
-    url += options.hash;
-  } // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-
-
-  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
-  }
-
-  return url;
 };
 
 /***/ }),
@@ -3538,18 +3494,15 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./bg-clear.png": "./src/assets/bg-clear.png",
-	"./bg-clouds.png": "./src/assets/bg-clouds.png",
-	"./bg-rain.png": "./src/assets/bg-rain.png",
-	"./bg-snow.png": "./src/assets/bg-snow.png",
-	"./bg-thunderstorm.png": "./src/assets/bg-thunderstorm.png",
-	"./bg.png": "./src/assets/bg.png",
 	"./icon-clear.png": "./src/assets/icon-clear.png",
 	"./icon-clouds.png": "./src/assets/icon-clouds.png",
+	"./icon-feels_like.png": "./src/assets/icon-feels_like.png",
+	"./icon-humidity.png": "./src/assets/icon-humidity.png",
 	"./icon-mist.png": "./src/assets/icon-mist.png",
 	"./icon-rain.png": "./src/assets/icon-rain.png",
 	"./icon-snow.png": "./src/assets/icon-snow.png",
-	"./icon-thunderstorm.png": "./src/assets/icon-thunderstorm.png"
+	"./icon-thunderstorm.png": "./src/assets/icon-thunderstorm.png",
+	"./icon-wind.png": "./src/assets/icon-wind.png"
 };
 
 
@@ -3620,22 +3573,13 @@ const App = () => {
         feels_like: Math.round(data.main.feels_like),
         humidity: Math.round(data.main.humidity),
         wind: Math.round(data.wind.speed),
-        description: data.weather[0].main.toUpperCase(),
+        description: data.weather[0].main,
         city: data.name,
         date: (0,date_fns_format__WEBPACK_IMPORTED_MODULE_0__["default"])(new Date(), 'EEEE | p'),
         icon: group1.some(
           condition => condition === data.weather[0].main.toLowerCase()
         )
           ? 'mist'
-          : group2.some(
-              condition => condition === data.weather[0].main.toLowerCase()
-            )
-          ? 'rain'
-          : data.weather[0].main.toLowerCase(),
-        bg: group1.some(
-          condition => condition === data.weather[0].main.toLowerCase()
-        )
-          ? 'clouds'
           : group2.some(
               condition => condition === data.weather[0].main.toLowerCase()
             )
@@ -3684,7 +3628,7 @@ const Controller = () => {
 
   const getData = async () => {
     try {
-      view.renderSpinner();
+      // view.renderSpinner();
       const city = view.userInput();
       const weather = await app.getWeather(city);
       view.clearInput();
@@ -3703,7 +3647,7 @@ const Controller = () => {
 
   const init = () => {
     view.addFormHandlers(getData);
-    view.addUnitsHandler(switchUnits);
+    // view.addUnitsHandler(switchUnits);
   };
 
   return { init };
@@ -3724,10 +3668,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "View": () => (/* binding */ View)
 /* harmony export */ });
 const View = () => {
-  const switchUnitsBtn = document.getElementById('switchUnits');
+  // const switchUnitsBtn = document.getElementById('switchUnits');
   const weatherContainer = document.getElementById('weather');
-  const localInfo = document.getElementById('localInfo');
-  const spinner = document.querySelector('.lds-ripple');
+  // const localInfo = document.getElementById('localInfo');
+  // const spinner = document.querySelector('.lds-ripple');
 
 
   const userInput = () => {
@@ -3737,22 +3681,22 @@ const View = () => {
 
   const clearInput = () => {
     document.getElementById('inputCity').value = '';
-    spinner.style.display = "none"
+    // spinner.style.display = "none"
   };
 
-  const renderSpinner = () => {
-    spinner.style.display = "inline-block"
-  }
+  // const renderSpinner = () => {
+  //   spinner.style.display = "inline-block"
+  // }
 
   const clearWeatherInfo = () => {
-    document.getElementById('message').textContent = '';
+    document.getElementById('error').classList.add('hidden');
+    document.getElementById('formInfo').classList.add('hidden');
     weatherContainer.innerHTML = '';
-    localInfo.innerHTML = '';
   };
 
   const renderError = () => {
-    const errorMessage = document.getElementById('message');
-    errorMessage.textContent = 'City not found';
+    const errorMessage = document.getElementById('error');
+    errorMessage.classList.remove('hidden');
   };
 
   const handlerHelper = (e, handler) => {
@@ -3773,17 +3717,17 @@ const View = () => {
     });
   };
 
-  const addUnitsHandler = handler => {
-    switchUnitsBtn.addEventListener('click', e => {
-      e.preventDefault();
-      handler();
-    });
-  };
+  // const addUnitsHandler = handler => {
+  //   switchUnitsBtn.addEventListener('click', e => {
+  //     e.preventDefault();
+  //     handler();
+  //   });
+  // };
 
   const displayWeather = (weather, units) => {
     function importImages(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().map((item) => {
         images[item.replace('./', '')] = r(item);
       });
       return images;
@@ -3792,34 +3736,63 @@ const View = () => {
     const images = importImages(
       __webpack_require__("./src/assets sync \\.(png%7Cjpe?g%7Csvg)$")
     );
-    console.log(images['bg-clouds.png']);
+    console.log(images['icon-clouds.png']);
 
-    const leftMarkup = `
-    <h1 id="temperature" class="weather__temp">${weather.temp}°${
-      units === 'metric' ? 'C' : 'F'
-    }</h1>
-    <p id="feelsLike" class="weather__info info">Feels like <span class="weather__span">${
-      weather.feels_like
-    }°${units === 'metric' ? 'C' : 'F'}</span></p>
-    <p id="humidity" class="weather__info info">Humidity <span class="weather__span">${
-      weather.humidity
-    }%</span></p>
-    <p id="wind" class="weather__info info">Wind <span class="weather__span">${
-      weather.wind
-    } ${units === 'metric' ? 'km/h' : 'mph'}</span></p>
+    const markup = `
+      <div class="weather__details">
+        <h3 class="weather__description">${weather.description}</h3>
+        <p class="weather__location">${weather.city} | ${weather.date}</p>
+        <img src="${images[`icon-${weather.icon}.png`]}" class="weather__img">
+        <h1 class="weather__temperature">${weather.temp}°C</h1>
+      </div>
+
+      <div class="weather__info">
+        <div class="weather__info--card">
+          <p>Feels like</p>
+          <img src="${images[`icon-feels_like.png`]}">
+          <p>${weather.feels_like}°</p>
+        </div>
+        <div class="weather__info--card">
+          <p>Wind</p>
+          <img src="${images[`icon-wind.png`]}">
+          <p>${weather.wind} km/h</p>
+        </div>
+        <div class="weather__info--card">
+          <p>Humidity</p>
+          <img src="${images[`icon-humidity.png`]}">
+          <p>${weather.humidity}%</p>
+        </div>
+      </div>
     `;
 
-    const rightMarkup = `
-    <div class="idk">    <h2 class="local__weather">${weather.description}</h2>
-    <p class="local__info info">${weather.city} | ${weather.date}</p></div>
-    <img src="${images[`icon-${weather.icon}.png`]}" class="weather-img">
-    `;
+    weatherContainer.insertAdjacentHTML('beforeend', markup);
 
-    document.getElementById('bg').style.background = `url(${images[`bg-${weather.bg}.png`]}) no-repeat center bottom`;
-    weatherContainer.insertAdjacentHTML('beforeend', leftMarkup);
-    localInfo.insertAdjacentHTML('beforeend', rightMarkup);
-    switchUnitsBtn.classList.remove('hidden');
-    switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
+    // const leftMarkup = `
+    // <h1 id="temperature" class="weather__temp">${weather.temp}°${
+    //   units === 'metric' ? 'C' : 'F'
+    // }</h1>
+    // <p id="feelsLike" class="weather__info info">Feels like <span class="weather__span">${
+    //   weather.feels_like
+    // }°${units === 'metric' ? 'C' : 'F'}</span></p>
+    // <p id="humidity" class="weather__info info">Humidity <span class="weather__span">${
+    //   weather.humidity
+    // }%</span></p>
+    // <p id="wind" class="weather__info info">Wind <span class="weather__span">${
+    //   weather.wind
+    // } ${units === 'metric' ? 'km/h' : 'mph'}</span></p>
+    // `;
+
+    // const rightMarkup = `
+    // <div class="idk">    <h2 class="local__weather">${weather.description}</h2>
+    // <p class="local__info info">${weather.city} | ${weather.date}</p></div>
+    // <img src="${images[`icon-${weather.icon}.png`]}" class="weather-img">
+    // `;
+
+    // document.getElementById('bg').style.background = `url(${images[`bg-${weather.bg}.png`]}); background-position: center;`;
+    // weatherContainer.insertAdjacentHTML('beforeend', leftMarkup);
+    // localInfo.insertAdjacentHTML('beforeend', rightMarkup);
+    // switchUnitsBtn.classList.remove('hidden');
+    // switchUnitsBtn.textContent = `Switch to ${units === 'metric' ? 'F' : 'C'}`;
   };
 
   const updateWeather = (weather, units) => {
@@ -3856,78 +3829,11 @@ const View = () => {
     clearInput,
     renderError,
     displayWeather,
-    addUnitsHandler,
+    // addUnitsHandler,
     updateWeather,
-    renderSpinner
   };
 };
 
-
-/***/ }),
-
-/***/ "./src/assets/bg-clear.png":
-/*!*********************************!*\
-  !*** ./src/assets/bg-clear.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "d253f69f7071965829f0.png";
-
-/***/ }),
-
-/***/ "./src/assets/bg-clouds.png":
-/*!**********************************!*\
-  !*** ./src/assets/bg-clouds.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "669656abd4ed0badee79.png";
-
-/***/ }),
-
-/***/ "./src/assets/bg-rain.png":
-/*!********************************!*\
-  !*** ./src/assets/bg-rain.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "6d049e69f835f2b1b608.png";
-
-/***/ }),
-
-/***/ "./src/assets/bg-snow.png":
-/*!********************************!*\
-  !*** ./src/assets/bg-snow.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "0ba19387918467fa11db.png";
-
-/***/ }),
-
-/***/ "./src/assets/bg-thunderstorm.png":
-/*!****************************************!*\
-  !*** ./src/assets/bg-thunderstorm.png ***!
-  \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "25794f1b10ae3acf9b3c.png";
-
-/***/ }),
-
-/***/ "./src/assets/bg.png":
-/*!***************************!*\
-  !*** ./src/assets/bg.png ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "a0470f6fe127e6ba1afc.png";
 
 /***/ }),
 
@@ -3938,7 +3844,7 @@ module.exports = __webpack_require__.p + "a0470f6fe127e6ba1afc.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "615a6043e8be6b3083db.png";
+module.exports = __webpack_require__.p + "d24c657c6e2e07658648.png";
 
 /***/ }),
 
@@ -3949,7 +3855,29 @@ module.exports = __webpack_require__.p + "615a6043e8be6b3083db.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "62bc6bb0bef5508dc859.png";
+module.exports = __webpack_require__.p + "276e0b5979bdb99a3e48.png";
+
+/***/ }),
+
+/***/ "./src/assets/icon-feels_like.png":
+/*!****************************************!*\
+  !*** ./src/assets/icon-feels_like.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "16c3f5ed3ab30df9961d.png";
+
+/***/ }),
+
+/***/ "./src/assets/icon-humidity.png":
+/*!**************************************!*\
+  !*** ./src/assets/icon-humidity.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "ab57cc86b97656a0317c.png";
 
 /***/ }),
 
@@ -3960,7 +3888,7 @@ module.exports = __webpack_require__.p + "62bc6bb0bef5508dc859.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "279242c5a5f16d310ebd.png";
+module.exports = __webpack_require__.p + "61589447136aa140bb7a.png";
 
 /***/ }),
 
@@ -3971,7 +3899,7 @@ module.exports = __webpack_require__.p + "279242c5a5f16d310ebd.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "7d6dff53b4eb5c12e6e7.png";
+module.exports = __webpack_require__.p + "cae7292eb535993b729b.png";
 
 /***/ }),
 
@@ -3982,7 +3910,7 @@ module.exports = __webpack_require__.p + "7d6dff53b4eb5c12e6e7.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "5e038a4037a76692b9a9.png";
+module.exports = __webpack_require__.p + "eba33b1380d5a7a4c2b3.png";
 
 /***/ }),
 
@@ -3993,7 +3921,18 @@ module.exports = __webpack_require__.p + "5e038a4037a76692b9a9.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "2c651043723d8b839f90.png";
+module.exports = __webpack_require__.p + "1eede6f6bd08e3449df0.png";
+
+/***/ }),
+
+/***/ "./src/assets/icon-wind.png":
+/*!**********************************!*\
+  !*** ./src/assets/icon-wind.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "55e6ef752af714f55850.png";
 
 /***/ })
 
@@ -4022,9 +3961,6 @@ module.exports = __webpack_require__.p + "2c651043723d8b839f90.png";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -4097,32 +4033,6 @@ module.exports = __webpack_require__.p + "2c651043723d8b839f90.png";
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

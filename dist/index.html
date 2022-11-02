@@ -7,32 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <title>Weather</title>
 <script defer src="main.js"></script></head>
 
 <body>
   <main class="container">
-    <div class="left">
-      <form id="form" class="form">
-        <div class="form__search">
-          <input id="inputCity" class="form__input" type="text" placeholder="London" autocomplete="off">
-          <span id="searchBtn" class="material-icons-outlined form__icon">search</span>
-        </div>
+    <form id="form" class="form">
+      <div class="form__search">
+        <input id="inputCity" class="form__input" type="text" placeholder="London" autocomplete="off">
+        <span id="searchBtn" class="material-icons-outlined form__icon">search</span>
+      </div>
+      <label for="inputCity" id="error" class="form__label form__label--error hidden">City not found</label>
+      <div class="form__info" id="formInfo">
+        <img src="276e0b5979bdb99a3e48.png" class="form__img">
         <label for="inputCity" id="message" class="form__label">Enter the name of your city</label>
-      </form>
-      <div id="weather" class="weather"></div>
-      <button id="switchUnits" class="hidden btn">Switch to C</button>
-    </div>
-
-    <div class="right">
-      <div id="localInfo" class="local"></div>
-    </div>
+      </div>
+    </form>
+    <div id="weather" class="weather"></div>
+    <!-- <button id="switchUnits" class="hidden btn">Switch to C</button> -->
   </main>
-  <div class="bg" id="bg"></div>
-  <div class="lds-ripple"><div></div><div></div></div>
 </body>
 
 </html>

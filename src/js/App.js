@@ -32,22 +32,13 @@ export const App = () => {
         feels_like: Math.round(data.main.feels_like),
         humidity: Math.round(data.main.humidity),
         wind: Math.round(data.wind.speed),
-        description: data.weather[0].main.toUpperCase(),
+        description: data.weather[0].main,
         city: data.name,
         date: format(new Date(), 'EEEE | p'),
         icon: group1.some(
           condition => condition === data.weather[0].main.toLowerCase()
         )
           ? 'mist'
-          : group2.some(
-              condition => condition === data.weather[0].main.toLowerCase()
-            )
-          ? 'rain'
-          : data.weather[0].main.toLowerCase(),
-        bg: group1.some(
-          condition => condition === data.weather[0].main.toLowerCase()
-        )
-          ? 'clouds'
           : group2.some(
               condition => condition === data.weather[0].main.toLowerCase()
             )
